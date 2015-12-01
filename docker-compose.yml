@@ -1,0 +1,3 @@
+ruby22:
+  build: .
+  dockerfile: Dockerfile
