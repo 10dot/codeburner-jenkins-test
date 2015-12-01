@@ -1,0 +1,10 @@
+run:
+  ruby22:
+
+plugins:
+- artifacts: 'coverage/**/*'
+
+notifications:
+  <% if( DOTCI_BRANCH =~ /(origin\/)?master/ ) { %>
+  - email: alock@groupon.com
+  <% } %>
