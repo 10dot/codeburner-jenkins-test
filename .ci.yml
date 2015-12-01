@@ -3,6 +3,7 @@ run:
 
 plugins:
 - artifacts: 'coverage/**/*'
+- codeburner
 
 notifications:
   <% if( DOTCI_BRANCH =~ /(origin\/)?master/ ) { %>
