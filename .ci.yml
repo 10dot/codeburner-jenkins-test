@@ -2,7 +2,6 @@ run:
   ruby22:
 
 plugins:
-- artifacts: 'coverage/**/*'
 - codeburner
 
 notifications:
