@@ -1,5 +1,0 @@
-version: 3
-name: codeburner-dotci
-title: Codeburner dotCI plugin
-description: Automated static code analysis triggered by PEST deployment notifications.
-
