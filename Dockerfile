@@ -10,4 +10,5 @@ RUN RAILS_ENV=test bundle install --no-deployment
 
 ADD . /app
 
-CMD bundle exec rake test
+CMD bash -c "bundle exec rake db:create:all db:test:prepare test"
+
