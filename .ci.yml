@@ -2,7 +2,14 @@ run:
   ruby22:
 
 plugins:
-- codeburner
+- codeburner:
+    notify: test@groupon.com
+    fail_build: true
+    thresholds:
+      0: 10
+      1: 3
+      2: 1
+      3: 0
 
 notifications:
   <% if( DOTCI_BRANCH =~ /(origin\/)?master/ ) { %>
